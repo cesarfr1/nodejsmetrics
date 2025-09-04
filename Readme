@@ -1,0 +1,4 @@
+Create a .env file using the .env_sample as example.
+Bring up the container with ``docker compose up `` command
+Create some requests using curl ``curl localhost:8080/rolldice``
+You can validate the signals being created by APM by enabling the variable OTEL_LOG_LEVEL on the compose.yaml file 
