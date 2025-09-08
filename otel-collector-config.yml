@@ -37,11 +37,11 @@ connectors:
   count:
 
 receivers:
-  # docker_stats:
-  #   endpoint: unix:///var/run/docker.sock
+  docker_stats:
+    endpoint: unix:///var/run/docker.sock
 
   hostmetrics:
-    # root_path: /hostfs
+    root_path: /hostfs
     scrapers:
       cpu:
         metrics:
