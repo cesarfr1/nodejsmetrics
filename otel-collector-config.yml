@@ -129,7 +129,7 @@ service:
       processors: [memory_limiter, batch, resourcedetection]
       exporters: [otlphttp/entities]
     logs:
-      receivers: [ otlp]
+      receivers: [otlp]
       processors:
       - memory_limiter
       - batch
