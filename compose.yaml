@@ -3,12 +3,11 @@ services:
     build: ./
     environment:
       OTEL_SERVICE_NAME: "rolldicenodejs-easy-docker"
-      OTEL_EXPORTER_OTLP_PROTOCOL: grpc
-      OTEL_EXPORTER_OTLP_ENDPOINT: "http://collector:4317"      
+      OTEL_EXPORTER_OTLP_PROTOCOL: "http/protobuf"
+      OTEL_EXPORTER_OTLP_ENDPOINT: "http://collector:4318"      
       SPLUNK_AUTOMATIC_LOG_COLLECTION: "true"
       OTEL_METRIC_EXPORT_INTERVAL: "10000"
       # OTEL_LOG_LEVEL: "verbose"
-      # SPLUNK_METRICS_ENABLED: true // enabled via app code
     ports:
       - "8080:8080"
 

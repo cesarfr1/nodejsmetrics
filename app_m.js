@@ -2,7 +2,6 @@ const { start } = require('@splunk/otel');
 const opentelemetry = require('@opentelemetry/api');
 
 start({
-  // serviceName: 'cf-easy-manual',
      metrics: {
      runtimeMetricsEnabled: true,
      }
@@ -18,7 +17,7 @@ const counter = meter.createCounter('clicks');
 
 
 var bunyan = require('bunyan');
-var log = bunyan.createLogger({name: 'myapp'});
+var log = bunyan.createLogger({name: 'rolldice'});
 
 
 function getRandomNumber(min, max) {
